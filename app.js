@@ -3,7 +3,7 @@
 var START=2018,END=2029,STAGES=["Proposed","Approved","Under construction","Complete"];
 var COL={"Proposed":"var(--p)","Approved":"var(--a)","Under construction":"var(--u)","Complete":"var(--c)"};
 var LANES=["Data centers","Transportation","Utilities","Budget & taxes","Development","Amenities"];
-var st={topic:"All",status:"All",zoom:1,open:"qts1",aCat:"All",aStat:"All"};
+var st={mBody:"All",mYear:"2026",mWhen:"All",topic:"All",status:"All",zoom:1,open:"qts1",aCat:"All",aStat:"All"};
 function $(id){return document.getElementById(id);}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 function toX(d){var p=d.split("-").map(Number);return((p[0]+((p[1]||1)-1)/12+((p[2]||1)-1)/365-START)/(END-START))*100;}
@@ -72,14 +72,27 @@ function map(){
   });
   if(b.length)m.fitBounds(b,{padding:[30,30]});
 }
+function meetingsL(){
+  var rows=meetings.filter(function(m){return(st.mBody==="All"||m.body===st.mBody)&&(st.mYear==="All"||m.date.slice(0,4)===st.mYear)&&(st.mWhen==="All"||(st.mWhen==="Upcoming")===m.upcoming);});
+  function lk(u,t){return u?'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+t+"</a>":'<span class="cap">'+t+" not posted</span>";}
+  $("mList").innerHTML=rows.length?rows.map(function(m){
+    var d=new Date(m.date+"T12:00:00").toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric",year:"numeric"});
+    return'<div class="card" style="margin-bottom:10px"><div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center"><strong>'+esc(d)+"</strong><span>"+esc(m.name)+"</span>"+pill(m.minutesStatus==="Upcoming"?"Upcoming":"Minutes: "+m.minutesStatus)+"</div>"+
+      (m.summary.length?"<ul>"+m.summary.map(function(b){return"<li>"+esc(b)+"</li>";}).join("")+"</ul>":(m.upcoming?"":'<p class="cap">Summary not compiled yet; see documents.</p>'))+
+      '<p style="margin:6px 0 0;font-size:14px">'+[lk(m.agenda,"Agenda"),lk(m.packet,"Packet"),lk(m.minutes,"Minutes"),'<a href="'+esc(m.portal)+'" target="_blank" rel="noopener">Portal page</a>'].join(" · ")+"</p></div>";
+  }).join(""):"<p>No meetings match these filters.</p>";
+}
 function init(){
   fill($("fTopic"),["All"].concat(LANES),function(v){st.topic=v;gantt();milestones();});
   fill($("fStatus"),["All"].concat(STAGES),function(v){st.status=v;gantt();});
   fill($("aCat"),["All","Grocery & retail","Restaurants","Commercial centers","Parks & rec","Schools","Healthcare","Library & civic","Public safety"],function(v){st.aCat=v;amenT();});
   fill($("aStat"),["All","Open","Approved","Proposed","Unconfirmed"],function(v){st.aStat=v;amenT();});
+  fill($("mBody"),["All","City Council","Planning Commission","Redevelopment Agency"],function(v){st.mBody=v;meetingsL();});
+  fill($("mYear"),["2026","All"],function(v){st.mYear=v;meetingsL();});
+  fill($("mWhen"),["All","Past","Upcoming"],function(v){st.mWhen=v;meetingsL();});
   Array.prototype.forEach.call(document.querySelectorAll("#zoom button"),function(btn){btn.onclick=function(){st.zoom=Number(btn.getAttribute("data-z"));Array.prototype.forEach.call(document.querySelectorAll("#zoom button"),function(x){x.classList.toggle("on",x===btn);});gantt();};});
   $("legend").innerHTML=STAGES.map(function(s){return'<span><span class="dot" style="background:'+COL[s]+'"></span>'+s+"</span>";}).join("")+'<span><span class="dot" style="border:2px solid var(--muted)"></span>Expected</span>';
-  gantt();detail();goalsT();amenT();milestones();map();
+  gantt();detail();goalsT();amenT();milestones();meetingsL();map();
   window.addEventListener("resize",gantt);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();

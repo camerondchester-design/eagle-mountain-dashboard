@@ -19,3 +19,6 @@ Edit `data.js`. Rules: every item needs a source URL; use `expected: true` for d
 
 ## Caveats
 Compiled Oct 29, 2026 from public sources, including independent civic sites (openutah.org, utahledger.com, civicrollcall.com, emv.soudub.com). Map pins were geocoded via OpenStreetMap Nominatim; approximate pins are marked. Not affiliated with Eagle Mountain City.
+
+## Meetings data
+`meetings` in `data.js` comes from the city's CivicClerk API, e.g. `https://eaglemountainut.api.civicclerk.com/v1/Events?$filter=startDateTime ge 2026-01-01T00:00:00Z&$orderby=startDateTime desc`. Summaries are hand-written from agendas/approved minutes.
