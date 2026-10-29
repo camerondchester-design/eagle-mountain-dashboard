@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eagle Mountain Civic Dashboard (unofficial)</title>
+<meta name="description" content="Unofficial citizen dashboard of Eagle Mountain, Utah council topics, projects, goals and amenities from public sources.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><h1>Eagle Mountain Civic Dashboard</h1>
+<p>What Eagle Mountain, Utah's council and planning commission have been working on, the city's stated goals, amenities, and where major projects stand. From public records as of Oct 29, 2026.</p></header>
+<nav><a href="#topics">Topics</a><a href="#timeline">Timeline</a><a href="#goals">Goals</a><a href="#amenities">Amenities</a><a href="#map-sec">Map</a><a href="#milestones">Milestones</a><a href="#sources">Sources</a><a href="#gaps">Caveats</a></nav>
+
+<section id="topics"><h2>What the city is talking about</h2><div class="topics">
+<div class="card"><h3>Data centers</h3><p>Meta operating and expanding; QTS building a 5-building campus; Tract and Google hold land. Oct 20: Corrigan Farms rezoned for a data center; a power plant would need a separate application.</p><a href="https://civicrollcall.com/data-centers.html">civicrollcall.com</a></div>
+<div class="card"><h3>Budget and property taxes</h3><p>Aug 18: 0.000900 rate (certified 0.000530) and $363,992,973 budget adopted 4-1; 28 public speakers. Property tax now dedicated to public safety.</p><a href="https://utahledger.com/regions/utah-county/eagle-mountain/meetings/council-2026-08-18">utahledger.com</a></div>
+<div class="card"><h3>Roads and traffic</h3><p>Lake Mountain Corridor alignment, Pony Express Pkwy to 7 lanes, Silver Lake school connections; funding is the hurdle.</p><a href="https://eaglemountain.openutah.org/meetings/2026-07-30-city-council-jul-30-2026-b9ae7319-468b-44d8-baab-9354632c2202">Jul 30 joint session</a></div>
+<div class="card"><h3>Water and sewer</h3><p>Plant expansion broke ground Oct 23. 5-year water costs $109.1M, wastewater $259M.</p><a href="https://eaglemountain.gov/wastewater-treatment-plant-expansion-october-2026/">eaglemountain.gov</a></div>
+<div class="card"><h3>Commercial growth and zoning</h3><p>Eagle's Landing (Smith's, Lowe's); Gateway Park 600-acre plan; Cedar Pass Ranch zone; alternative energy overlay revisions.</p><a href="https://eaglemountain.openutah.org/meetings/2c821a48-6a43-415d-af7e-f4914baf7945">Mar 25 meeting</a></div>
+</div></section>
+
+<section id="timeline"><h2>Interactive project timeline</h2>
+<p class="cap">Click a project for details. Dots are milestones colored by stage; hollow dots are expected dates, not achievements. No percentages are shown because none are published.</p>
+<div class="filters"><label>Topic<select id="fTopic"></select></label><label>Current status<select id="fStatus"></select></label>
+<div id="zoom"><button data-z="1" class="on">2018–2029</button> <button data-z="2.5">2.5×</button> <button data-z="4">4×</button></div></div>
+<div class="legend" id="legend"></div>
+<div class="gwrap"><div class="gantt" id="gantt"></div></div>
+<div class="card" id="detail" style="margin-top:12px"></div></section>
+
+<section id="goals"><h2>Goals and progress</h2>
+<p class="cap">Goals as stated in adopted city plans. Status is only what records show; Unknown means no progress has been published.</p>
+<div class="tw"><table id="goalT"><thead><tr><th>Goal</th><th>Stated in</th><th>Related projects</th><th>Status</th></tr></thead><tbody></tbody></table></div>
+<p>The 2018 General Plan vision: "A sustainable, beautiful, and innovative place to live, work, and play," with five guiding principles: resiliency, healthy and vibrant community, stewardship and civic beauty, collaboration, and diversity and choices.</p></section>
+
+<section id="amenities"><h2>Amenities</h2>
+<div class="callout"><strong>What's coming:</strong> Smith's Marketplace and Lowe's at Eagle's Landing are approved, with no opening date yet. Lake Mountain School District bought 100 acres for a high school plus UVU and MTECH campuses (about 3 years to build once started). A school board official said it will sit next to an Intermountain Health hospital (not confirmed by Intermountain).</div>
+<div class="filters" style="margin-top:12px"><label>Category<select id="aCat"></select></label><label>Status<select id="aStat"></select></label></div>
+<p class="cap">"Unconfirmed" = mentioned by one source with no official announcement found.</p>
+<div class="tw"><table id="amenT"><thead><tr><th>Name</th><th>Category</th><th>Status</th><th>Opening</th><th>Location</th><th>Source</th></tr></thead><tbody></tbody></table></div></section>
+
+<section id="map-sec"><h2>Map</h2>
+<p class="cap">Pins only where an address or OpenStreetMap feature was found. Dashed-outline pins are approximate. Other projects are described below without pins.</p>
+<div id="map"></div>
+<div class="tw" style="margin-top:12px"><table><thead><tr><th>Project</th><th>Location (as described in sources, no pin)</th></tr></thead><tbody>
+<tr><td>QTS, Google, Tract campuses</td><td>Around Pony Express Pkwy in the RTI overlay; QTS about 193 acres west of Meta</td></tr>
+<tr><td>Corrigan Farms</td><td>Parcel 59:068:0006, about 41 acres bordered by RTI land on three sides</td></tr>
+<tr><td>Eagle's Landing (Smith's, Lowe's)</td><td>North of Mid Valley Rd, east of Pony Express Pkwy</td></tr>
+<tr><td>Gateway Park</td><td>About 600 acres north of SR-73</td></tr>
+<tr><td>K-16 campus</td><td>West of Eagle Mountain Blvd, north of Midvalley Rd</td></tr>
+<tr><td>Wastewater plant expansion</td><td>Existing city treatment plant (address not in sources)</td></tr>
+</tbody></table></div>
+<p>Parcels and zoning: <a href="https://gis.eaglemountain.gov/">gis.eaglemountain.gov</a></p></section>
+
+<section id="milestones"><h2>Milestone list</h2><p class="cap">Same data as the timeline, filtered by the topic chosen above.</p>
+<div class="tw"><table id="msT"><thead><tr><th>Date</th><th>Milestone</th><th>Stage</th></tr></thead><tbody></tbody></table></div></section>
+
+<section id="sources"><h2>Official sources</h2><div class="links">
+<a class="card" href="https://eaglemountain.gov/">City website and news</a>
+<a class="card" href="https://eaglemountain.gov/priorities-plans/responsible-growth/">Long-range plans and transportation plan</a>
+<a class="card" href="https://eaglemountain.gov/wp-content/uploads/2026/04/2025-2018-General-Plan-Water-Element-Update.pdf">General Plan (2018, water element update)</a>
+<a class="card" href="https://eaglemountain.gov/wp-content/uploads/2026/04/mp-parks-trails-open-space-master-plan.pdf">Parks, Trails &amp; Open Space Master Plan</a>
+<a class="card" href="https://www.utah.gov/pmn/sitemap/publicbody/7293.html">Utah Public Notice: adopted ordinances</a>
+<a class="card" href="https://gis.eaglemountain.gov/">City GIS maps</a>
+<a class="card" href="https://www.utah.gov/pmn/files/1360683.pdf">2025 Wastewater Master Plan (PDF)</a>
+<a class="card" href="https://udotinput.utah.gov/NWUtahCounty">UDOT Northwest Utah County projects</a>
+</div></section>
+
+<section id="gaps"><h2>Gaps and caveats</h2><div class="callout warnbox">Some items come from independent civic sites (openutah.org, utahledger.com, civicrollcall.com, emv.soudub.com), not the city. Unverified: QTS "buildings 1-3 by end of 2026," the Intermountain hospital, and the Overland 5th amendment date (Mar 25 vs Aug 18). No completion dates are published for QTS, the wastewater plant, Eagle's Landing, or Eagle Mountain's Pony Express widening. Parks goals have no tracked projects yet.</div></section>
+</main>
+<footer>Unofficial citizen dashboard compiled from public sources; last updated Oct 29, 2026. Not affiliated with Eagle Mountain City. Items marked unconfirmed, expected, or third-party are unverified; check official minutes before relying on them. Map data © OpenStreetMap contributors.</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
