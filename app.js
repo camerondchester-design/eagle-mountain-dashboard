@@ -102,6 +102,13 @@ function promisesV(){
     o.promises.map(function(p){return'<div class="prom"><div><a href="'+esc(p.src)+'" target="_blank" rel="noopener">'+esc(p.p)+'</a>'+(p.vague?' <span class="cap">(vague)</span>':'')+'</div><div style="display:flex;gap:8px;align-items:center"><span class="pill" style="background:'+SC[p.status]+';color:#fff">'+esc(p.status)+'</span>'+(p.pct!==null?'<span class="cap">'+p.pct+'%</span>':'')+'</div>'+(p.pct!==null?bar(p.pct):'')+'<details><summary>Why</summary><p style="font-size:14px;margin:4px 0">'+esc(p.why)+'</p>'+(p.ev.length?'<p class="cap">Evidence: '+p.ev.map(function(e){return'<a href="'+esc(e[1])+'" target="_blank" rel="noopener">'+esc(e[0])+'</a>';}).join(" · ")+'</p>':'')+'</details></div>';}).join("")+'</div>';}).join("");
   $("cands").innerHTML=candidates2027.length?candidates2027.map(function(c){return"<p>"+esc(c.name)+"</p>";}).join(""):'<p><strong>None declared yet.</strong> No public 2027 candidacies for Eagle Mountain mayor or council were found as of Oct 29, 2026. Formal filing is expected in early June 2027. This section will list candidates and their own stated messaging once they declare.</p>';
 }
+function opinionV(){
+  var C={"Positive":"#15803d","Mixed":"#b45309","Negative":"#b91c1c","Too little data":"#6b7280"};
+  function a(u,t){return'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(t)+'</a>';}
+  $("opTopics").innerHTML=opinionTopics.map(function(t){return'<div class="card"><div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><strong>'+esc(t.t)+'</strong><span class="pill" style="background:'+C[t.s]+';color:#fff">'+esc(t.s)+'</span></div><p class="cap" style="margin:4px 0">n = '+t.n+' items</p><p style="font-size:14px">'+esc(t.sum)+'</p><ul style="font-size:14px;padding-left:18px">'+t.q.map(function(q){return"<li>"+a(q[1],q[0])+"</li>";}).join("")+"</ul></div>";}).join("");
+  $("opPolls").innerHTML=opinionPolls.map(function(p){return'<div class="card"><strong>'+a(p.url,p.name)+'</strong><p class="cap">'+esc(p.date)+" · "+esc(p.n)+'</p><p style="font-size:14px">'+esc(p.find)+"</p></div>";}).join("")+'<div class="card"><strong>Other public polls</strong><p style="font-size:14px">'+esc(opinionNoPoll)+"</p></div>";
+  $("opNews").innerHTML=headlines.slice().sort(function(x,y){return x[0]<y[0]?1:-1;}).map(function(h){return'<li style="margin:4px 0"><span class="cap">'+esc(h[0])+" · "+esc(h[2])+"</span> "+a(h[3],h[1])+"</li>";}).join("");
+}
 function init(){
   fill($("fTopic"),["All"].concat(LANES),function(v){st.topic=v;gantt();milestones();});
   fill($("fStatus"),["All"].concat(STAGES),function(v){st.status=v;gantt();});
@@ -112,7 +119,7 @@ function init(){
   fill($("mWhen"),["All","Past","Upcoming"],function(v){st.mWhen=v;meetingsL();});
   Array.prototype.forEach.call(document.querySelectorAll("#zoom button"),function(btn){btn.onclick=function(){st.zoom=Number(btn.getAttribute("data-z"));Array.prototype.forEach.call(document.querySelectorAll("#zoom button"),function(x){x.classList.toggle("on",x===btn);});gantt();};});
   $("legend").innerHTML=STAGES.map(function(s){return'<span><span class="dot" style="background:'+COL[s]+'"></span>'+s+"</span>";}).join("")+'<span><span class="dot" style="border:2px solid var(--muted)"></span>Expected</span>';
-  gantt();detail();goalsT();amenT();milestones();meetingsL();promisesV();map();
+  gantt();detail();goalsT();amenT();milestones();meetingsL();promisesV();opinionV();map();
   window.addEventListener("resize",gantt);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();

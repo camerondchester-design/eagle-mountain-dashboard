@@ -2440,3 +2440,53 @@ const officials = [
   note:"No campaign platform, so no promises are scored. In his interview he highlighted his career as a certified financial planner and asset manager (summary at utahrecord.org). On Jul 7 he said he supports using RAP tax or utility-sale funds to restore trailheads.",
   promises:[]}
 ];
+
+// ---- Public opinion (compiled Oct 29, 2026). Not a scientific sample. n = items collected for that topic.
+const USU="https://www.usu.edu/utah-wellbeing-project/reports/2026/eaglemountain-wellbeing-survey-findings-2026";
+const opinionTopics=[
+ {t:"Growth & traffic",s:"Negative",n:5,sum:"Traffic and the pace of growth are the most consistent complaints in every source type. Even the mayor calls traffic 'one of our biggest frustrations.'",q:[
+  ["\"88% of respondents felt population growth was too fast; traffic was the top concern (96%).\" USU Utah Wellbeing Survey, 2026",USU],
+  ["Reddit post (Sep 2026), \"Stop Eagle Mountain's Overdevelopment for Big Tech and Developers\": cites traffic, $750M in Meta incentives, and the tax hike","https://www.reddit.com/r/EagleMountain/comments/1w9cn47/stop_eagle_mountains_overdevelopment_for_big_tech/"],
+  ["2026 State of the City calls traffic \"one of our biggest frustrations\"","https://eaglemountain.gov/2026-state-of-the-city/"]]},
+ {t:"Data centers, QTS & power plants",s:"Mixed",n:8,sum:"Organized opposition shows up at hearings on gas plants and new data-center zoning, focused on emissions, noise and calls for a statewide moratorium. Other hearings drew few speakers, and some residents online favor data centers if roads get built.",q:[
+  ["\"Public commenters opposed the natural gas plant (emissions, noise, location).\" Utah Ledger, Mar 3 council meeting","https://utahledger.com/regions/utah-county/eagle-mountain/meetings/council-2026-03-03"],
+  ["\"Eagle Mountain rezoning for possible data center draws little opposition\" KSL","https://www.ksl.com/article/51627416/eagle-mountain-rezoning-for-possible-data-center-draws-little-opposition"],
+  ["Reddit replies split: one says the city \"needs to build more houses not data centers\", another says to \"just build the roads and infrastructure\"","https://www.reddit.com/r/EagleMountain/comments/1w9cn47/stop_eagle_mountains_overdevelopment_for_big_tech/"]]},
+ {t:"Taxes",s:"Negative",n:4,sum:"The proposed property tax increase for sheriff's deputies (183% as first adopted) drew a resident referendum application. The council repealed it and adopted a smaller 69.8% increase (about $99 a year for a median home). Referendum sponsors said their main concern was transparency, and they acknowledged some increase was needed.",q:[
+  ["\"Following public pushback and the filing of a resident-led referendum...\" Daily Herald, Aug 20","https://www.heraldextra.com/news/2026/aug/20/eagle-mountain-city-council-repeals-initial-property-tax-raise-agrees-on-lower-rate-hike/"],
+  ["Residents cited cost of living, young families and fixed incomes at the Aug 6 hearing. Utah Ledger","https://utahledger.com/news/eagle-mountain-property-tax-2026"]]},
+ {t:"Water & sewer",s:"Mixed",n:3,sum:"Residents are worried about water supply, including how much water data centers use. The city broke ground on the sewer plant expansion in October.",q:[
+  ["Water supply (85%) and water quality (78%) were the No. 2 and No. 3 concerns. USU survey",USU],
+  ["\"$120M Utah Wastewater Expansion Targets Rapid Growth, Capacity Crunch\" ENR, Oct 26","https://www.enr.com/articles/64084-120m-utah-wastewater-expansion-targets-rapid-growth-capacity-crunch"]]},
+ {t:"Amenities & shopping",s:"Positive",n:5,sum:"Residents want more restaurants and shopping, and half of survey respondents (50%) say economic development is too slow. News of the Smith's and Lowe's approvals and of new restaurants has been received positively.",q:[
+  ["Residents \"would like to see more sit-down restaurants, shopping centers, and amenities for kids.\" USU survey",USU],
+  ["\"Lowe's, Smith's gain City Council approval\" Eagle Mountain City","https://eaglemountain.gov/lowes-smiths-gain-city-council-approval/"],
+  ["\"Huge for Eagle Mountain, exciting to see the city planning for where families will be working...\" X post, Oct 29 (on the aviation hub)","https://x.com/i/status/2115790374501482673"]]},
+ {t:"Community & quality of life",s:"Mixed",n:3,sum:"Residents value the quiet, the trails and the family feel, but community-connection scores are among the lowest in the state.",q:[
+  ["Community connection ranked 54 of 57 Utah cities surveyed. USU survey",USU],
+  ["\"Eagle Mountain is officially a Healthy Utah Community!\" City X post, Oct 27","https://x.com/i/status/2115199956269322699"]]},
+ {t:"Schools",s:"Too little data",n:2,sum:"There was little public discussion online. The education rating dropped between 2020 and 2026 in the USU survey. The city held a joint work meeting with the new Lake Mountain School District on Oct 28.",q:[
+  ["Education was among the wellbeing domains that declined since 2020. USU survey",USU]]}
+];
+const opinionPolls=[
+ {name:"USU Utah Wellbeing Survey, Eagle Mountain 2026",date:"Apr 2026",n:"359 responses (margin of error about 5%; opt-in, married residents overrepresented)",find:"Personal wellbeing 3.92/5, community wellbeing 3.29/5 (both down from 2020). 88% say growth is too fast; 50% say economic development is too slow. Top concerns: traffic 96%, water supply 85%, water quality 78%.",url:USU},
+ {name:"Eagle Mountain City community survey 2026",date:"Opened Oct 7, 2026",n:"Results not yet published",find:"The city's annual resident survey is open now. No 2026 results have been released.",url:"https://eaglemountain.gov/share-your-feedback-in-our-community-survey/"}
+];
+const opinionNoPoll="No Y2 Analytics or Deseret News/Hinckley poll specific to Eagle Mountain was found for 2026.";
+const headlines=[
+ ["2026-10-28","Eagle Mountain takes first steps toward an aviation hub","Eagle Mountain City","https://eaglemountain.gov/aam-aviation-hub-zero-gravity-summit/"],
+ ["2026-10-26","$120M wastewater expansion targets rapid growth, capacity crunch","ENR","https://www.enr.com/articles/64084-120m-utah-wastewater-expansion-targets-rapid-growth-capacity-crunch"],
+ ["2026-10-26","The city wants to allow power lines on farm-zoned land","Eagle Mountain Value","https://emv.soudub.com/issues/valueletter-2026-october-26/"],
+ ["2026-10-22","Corrigan Farms can become a data center, but a power plant would need its own approval","Eagle Mountain Value","https://emv.soudub.com/issues/valueletter-2026-october-22/"],
+ ["2026-10-21","A woman was arrested while protesting data centers at a Utah County meeting","Salt Lake Tribune","https://www.sltrib.com/news/2026/10/21/woman-was-arrested-while/"],
+ ["2026-10-20","Residents cited after altercation over data center discussion in Utah County meeting","KSL","https://www.ksl.com/article/51639227/residents-cited-after-physical-altercation-over-data-center-discussion-in-utah-county-meeting"],
+ ["2026-10-07","City opens 2026 community survey","Eagle Mountain City","https://eaglemountain.gov/share-your-feedback-in-our-community-survey/"],
+ ["2026-09-25","Postal worker accused of tossing Utah ballots says he had no political motive","Salt Lake Tribune","https://www.sltrib.com/news/politics/2026/09/25/postal-worker-accused-tossing-utah/"],
+ ["2026-09","Eagle Mountain rezoning for possible data center draws little opposition","KSL","https://www.ksl.com/article/51627416/eagle-mountain-rezoning-for-possible-data-center-draws-little-opposition"],
+ ["2026-09","Utah postal worker accused of throwing away 300 mail-in ballots in church parking lot","KSL","https://www.ksl.com/article/51627290/utah-postal-worker-accused-of-throwing-away-300-mail-in-ballots-in-church-parking-lot"],
+ ["2026-09-14","Meta boosts Eagle Mountain investment, $3B+ Utah data center","Utah Business","https://www.utahbusiness.com/industry/2026/09/14/meta-boosts-eagle-mountain-investment-3-billion-utah-data-center/"],
+ ["2026-08-20","Council repeals initial property tax raise, agrees on lower rate hike","Daily Herald","https://www.heraldextra.com/news/2026/aug/20/eagle-mountain-city-council-repeals-initial-property-tax-raise-agrees-on-lower-rate-hike/"],
+ ["2026-08-20","A canceled tax increase, a confirmed Smith's, and free job help","Eagle Mountain Value","https://www.eaglemountainvalue.com/p/valueletter-2026-august-20"],
+ ["2026-08","Council set, repealed and reset its 2026 property tax rate in August","Utah Ledger","https://utahledger.com/news/eagle-mountain-property-tax-2026"],
+ ["2026-03-12","2026 State of the City: 'Less Talk & More Action'","Eagle Mountain City","https://eaglemountain.gov/2026-state-of-the-city/"]
+];
