@@ -89,6 +89,19 @@ function meetingsL(){
       '<p style="margin:6px 0 0;font-size:14px">'+[lk(m.agenda,"Agenda"),lk(m.packet,"Packet"),lk(m.minutes,"Minutes"),'<a href="'+esc(m.portal)+'" target="_blank" rel="noopener">Portal page</a>'].join(" · ")+"</p></div>";
   }).join(""):"<p>No meetings match these filters.</p>";
 }
+function promisesV(){
+  var SC={"Done":"#15803d","In progress":"#2563eb","Stalled":"#b45309","No evidence":"#6b7280","Not measurable":"#9ca3af"};
+  function bar(v){return'<div class="pbar"><div style="width:'+v+'%"></div></div>';}
+  function avg(ps){var s=ps.filter(function(x){return x.pct!==null;});return s.length?Math.round(s.reduce(function(a,b){return a+b.pct;},0)/s.length):null;}
+  var all=[];officials.forEach(function(o){all=all.concat(o.promises);});var ov=avg(all);
+  var days=Math.ceil((new Date(election.date+"T12:00:00")-new Date())/864e5);
+  $("elec").innerHTML='<div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center"><div class="count">'+days+'<span>days</span></div><div><strong>'+esc(election.label)+'</strong><p class="cap" style="margin:4px 0">'+esc(election.notes)+'</p></div></div><p><strong>Seats expected on the 2027 ballot:</strong></p><ul>'+election.seats.map(function(x){return"<li>"+esc(x)+"</li>";}).join("")+'</ul><p class="cap">'+esc(election.notUp)+' Sources: '+election.src.map(function(u,i){return'<a href="'+esc(u)+'" target="_blank" rel="noopener">['+(i+1)+']</a>';}).join(" ")+'</p><p><strong>Average across all scored promises: '+ov+'%</strong></p>'+bar(ov);
+  $("offList").innerHTML=officials.map(function(o){var a=avg(o.promises);
+    return'<div class="card"><h3 style="margin:0">'+esc(o.name)+'</h3><p class="cap" style="margin:2px 0">'+esc(o.role)+" · "+esc(o.term)+'</p><p class="cap" style="margin:2px 0"><a href="'+esc(o.runSrc)+'" target="_blank" rel="noopener">'+esc(o.run)+'</a></p>'+
+    (a!==null?'<p style="margin:8px 0 2px"><strong>Overall: '+a+'%</strong></p>'+bar(a):'<p><strong>Not scored</strong></p>')+(o.note?'<p class="cap">'+esc(o.note)+'</p>':'')+
+    o.promises.map(function(p){return'<div class="prom"><div><a href="'+esc(p.src)+'" target="_blank" rel="noopener">'+esc(p.p)+'</a>'+(p.vague?' <span class="cap">(vague)</span>':'')+'</div><div style="display:flex;gap:8px;align-items:center"><span class="pill" style="background:'+SC[p.status]+';color:#fff">'+esc(p.status)+'</span>'+(p.pct!==null?'<span class="cap">'+p.pct+'%</span>':'')+'</div>'+(p.pct!==null?bar(p.pct):'')+'<details><summary>Why</summary><p style="font-size:14px;margin:4px 0">'+esc(p.why)+'</p>'+(p.ev.length?'<p class="cap">Evidence: '+p.ev.map(function(e){return'<a href="'+esc(e[1])+'" target="_blank" rel="noopener">'+esc(e[0])+'</a>';}).join(" · ")+'</p>':'')+'</details></div>';}).join("")+'</div>';}).join("");
+  $("cands").innerHTML=candidates2027.length?candidates2027.map(function(c){return"<p>"+esc(c.name)+"</p>";}).join(""):'<p><strong>None declared yet.</strong> No public 2027 candidacies for Eagle Mountain mayor or council were found as of Oct 29, 2026. Formal filing is expected in early June 2027. This section will list candidates and their own stated messaging once they declare.</p>';
+}
 function init(){
   fill($("fTopic"),["All"].concat(LANES),function(v){st.topic=v;gantt();milestones();});
   fill($("fStatus"),["All"].concat(STAGES),function(v){st.status=v;gantt();});
@@ -99,7 +112,7 @@ function init(){
   fill($("mWhen"),["All","Past","Upcoming"],function(v){st.mWhen=v;meetingsL();});
   Array.prototype.forEach.call(document.querySelectorAll("#zoom button"),function(btn){btn.onclick=function(){st.zoom=Number(btn.getAttribute("data-z"));Array.prototype.forEach.call(document.querySelectorAll("#zoom button"),function(x){x.classList.toggle("on",x===btn);});gantt();};});
   $("legend").innerHTML=STAGES.map(function(s){return'<span><span class="dot" style="background:'+COL[s]+'"></span>'+s+"</span>";}).join("")+'<span><span class="dot" style="border:2px solid var(--muted)"></span>Expected</span>';
-  gantt();detail();goalsT();amenT();milestones();meetingsL();map();
+  gantt();detail();goalsT();amenT();milestones();meetingsL();promisesV();map();
   window.addEventListener("resize",gantt);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
