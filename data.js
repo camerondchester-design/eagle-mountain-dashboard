@@ -69,7 +69,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/694/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/694/files",
+"decisions": []
 },
 {
 "id": 732,
@@ -82,7 +83,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/732/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/732/files",
+"decisions": []
 },
 {
 "id": 681,
@@ -95,7 +97,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/681/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/681/files",
+"decisions": []
 },
 {
 "id": 761,
@@ -108,7 +111,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/761/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/761/files",
+"decisions": []
 },
 {
 "id": 719,
@@ -121,7 +125,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/719/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/719/files",
+"decisions": []
 },
 {
 "id": 693,
@@ -134,7 +139,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/693/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/693/files",
+"decisions": []
 },
 {
 "id": 731,
@@ -147,7 +153,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/731/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/731/files",
+"decisions": []
 },
 {
 "id": 680,
@@ -160,7 +167,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/680/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/680/files",
+"decisions": []
 },
 {
 "id": 774,
@@ -173,7 +181,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/774/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/774/files",
+"decisions": []
 },
 {
 "id": 718,
@@ -186,7 +195,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/718/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/718/files",
+"decisions": []
 },
 {
 "id": 760,
@@ -199,7 +209,8 @@ const meetings = [
 "packet": null,
 "minutes": null,
 "minutesStatus": "Upcoming",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/760/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/760/files",
+"decisions": []
 },
 {
 "id": 775,
@@ -215,7 +226,9 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=3019,plainText=false)",
 "minutes": null,
 "minutesStatus": "Pending",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/775/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/775/files",
+"textSource": "agenda",
+"decisions": []
 },
 {
 "id": 692,
@@ -231,7 +244,9 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=3013,plainText=false)",
 "minutes": null,
 "minutesStatus": "Pending",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/692/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/692/files",
+"textSource": "agenda",
+"decisions": []
 },
 {
 "id": 730,
@@ -249,7 +264,9 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=3008,plainText=false)",
 "minutes": null,
 "minutesStatus": "Pending",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/730/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/730/files",
+"textSource": "agenda",
+"decisions": []
 },
 {
 "id": 679,
@@ -267,7 +284,30 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2992,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=3018,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/679/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/679/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Eagle Mountain Planning Commission Meeting \u2013 October 13, 2026 Page 1 of 4",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "UCCU Express",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Oak Hollow and Parkway Crossroads Rezone",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Artificial Turf and rear yard Landscaping",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 759,
@@ -283,7 +323,9 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2994,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=3011,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/759/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/759/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 717,
@@ -301,7 +343,65 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2984,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=3010,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/717/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/717/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Approving a Community Garden Policy",
+"outcome": "Approved",
+"vote": "4:1"
+},
+{
+"item": "RESOLUTIO N \u2013 A Resolution of Eagle Mountain City, Utah, Authorizing the Land Disposal Application to Proceed and Directing Staff to Begin the Notice \u2026",
+"outcome": "Denied",
+"vote": "Unanimous"
+},
+{
+"item": "Authorizing the Land Disposal Application to Proceed and Directing Staff to Begin the Notice and Public Hearing Process for a Portion of Utah County P\u2026",
+"outcome": "Denied",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Corrigan Farms Development Agreement",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Updating the Culinary Water Impact Fee Facility Plan (IFFP)",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Updating the Wastewater Master Plan and the Wastewater Impact Fee Facility Plan (IFFP)",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Section 9.10 and 17.47 Regarding Archery Use Within the City Eagle Mountain City Council",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Section 17.60.120 General Fencing/Screening Provisions",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Section 17.25.040 Residential Standards Table",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code 17.100.040 Master Site Plans",
+"outcome": "Tabled",
+"vote": "4:1"
+},
+{
+"item": "UPDATE \u2013 Legislative Priorities List",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 773,
@@ -317,7 +417,9 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2985,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=3009,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/773/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/773/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 771,
@@ -333,7 +435,9 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2976,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2987,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/771/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/771/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 691,
@@ -350,7 +454,30 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2968,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2996,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/691/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/691/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Wildland Urban Interface Standards",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Creating Archery Zoning in Eagle Mountain City",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Corrigan Farms Rezone",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Corrigan Farms Development Agreement",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 729,
@@ -368,7 +495,15 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2961,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2986,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/729/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/729/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Approving the First Amendment to the Fiscal Year 2026-2027 Annual Budget",
+"outcome": "Approved",
+"vote": "3:0"
+}
+]
 },
 {
 "id": 678,
@@ -385,7 +520,20 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2954,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2974,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/678/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/678/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Culinary Water Impact Fee Facility Plan (IFFP)",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Wastewater Master Plan and the Wastewater Impact Fee Facility Plan (IFFP)",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 716,
@@ -403,7 +551,40 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2950,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2965,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/716/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/716/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Amending Eagle Mountain Municipal Code Chapter 3.30 regarding Land Disposals",
+"outcome": "Approved",
+"vote": "4:0"
+},
+{
+"item": "PRELIMINARY PLAT \u2013 Gateway Park Phase 3",
+"outcome": "Approved",
+"vote": "4:0"
+},
+{
+"item": "Councilmember Whiting seconded the amended motion",
+"outcome": "Approved",
+"vote": "4:0"
+},
+{
+"item": "Rezoning Certain Lands Known as Pinnacles and Approving the Pinnacles Master Development Plan/Master Development Agreement Amendment",
+"outcome": "Denied",
+"vote": "3:1"
+},
+{
+"item": "ORDIANCE \u2013 An Ordinance of Eagle Mountain City, Utah, Enacting Chapter",
+"outcome": "Approved",
+"vote": "4:0"
+},
+{
+"item": "UPDATE \u2013 Legislative Priorities List",
+"outcome": "Approved",
+"vote": "4:0"
+}
+]
 },
 {
 "id": 770,
@@ -418,7 +599,15 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2940,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2952,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/770/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/770/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Protesting the Red Cedar Corporation Annexation Petition Filed with the Town of Cedar Fort on July 27, 2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 690,
@@ -426,12 +615,46 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"5 recorded votes on agenda items (5 unanimous); details under Decisions.",
+"Recommended approval (Unanimous): Brylee Farms Second Amendment Phase B Development Agreement",
+"Recommended approval (Unanimous): PRELIMINARY PLAT-Gateway Park Phase 3",
+"Recommended approval (Unanimous): Spring Run Plaza Lot 1",
+"Discussed: Rules of Order and Procedure"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2926,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2927,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2956,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/690/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/690/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Brylee Farms Second Amendment Phase B Development Agreement",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "PRELIMINARY PLAT-Gateway Park Phase 3",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Spring Run Plaza Lot 1",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Spring Run Plaza Lot 2",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Retaining Wall Construction Standards Changes",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 753,
@@ -447,7 +670,9 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2918,plainText=false)",
 "minutes": null,
 "minutesStatus": "Pending",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/753/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/753/files",
+"textSource": "agenda",
+"decisions": []
 },
 {
 "id": 728,
@@ -465,7 +690,60 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2925,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2951,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/728/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/728/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Accepting the Eagle Mountain City Fiscal Year 2025 Audited Financial Statements",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Awarding the Bid for EMC 6.0 MGD Wastewater Treatment Facility Expansion \u2013 GMP-2 Oxidation Ditch and Miscellaneous Site Improvements to MGC Contractor\u2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Repealing a Property Tax Increase Above the Certified Tax Rate for Fiscal Year 2026-2027",
+"outcome": "Approved",
+"vote": "4:1"
+},
+{
+"item": "Approving a Property Tax Increase Above the Certified Tax Rate for Fiscal Year 2026-2027",
+"outcome": "Approved",
+"vote": "4:1"
+},
+{
+"item": "Adopting the Fiscal Year 2026-2027 Annual Budget Totaling $363,992,973",
+"outcome": "Approved",
+"vote": "4:1"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code 16.20.040 (Preliminary Plats) regarding Street Names",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code 16.25.040, Final Plats",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Mid-Valley CRA Participation Agreement between Eagle Mountain City, the Redevelopment Agency of Eagle Mountain City, and Terra Smith\u2019s E\u2026",
+"outcome": "Approved",
+"vote": "4:1"
+},
+{
+"item": "Adopting the Mid-Valley Community Reinvestment Project Area Plan, as Approved by the Redevelopment Agency of Eagle Mountain City, as the Official Comm\u2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the 5 Amendment to the Amended and Restated Overland Master Development Agreement",
+"outcome": "Approved",
+"vote": "4:1"
+}
+]
 },
 {
 "id": 677,
@@ -473,12 +751,24 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"1 recorded votes on agenda items (1 unanimous); details under Decisions.",
+"Recommended approval (Unanimous): Pinnacles Rezone and Master Development Plan/Master Development Agreement Amendment",
+"Discussed: Site Plans"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2898,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2899,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2942,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/677/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/677/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Pinnacles Rezone and Master Development Plan/Master Development Agreement Amendment",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 756,
@@ -493,7 +783,15 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2902,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2931,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/756/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/756/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Approving the Fiscal Year 2026 Community Development Block Grant (CDBG) Annual Action Plan and Authorizing Its Submission to the U.S. Department of Ho\u2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 747,
@@ -509,7 +807,15 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2893,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2930,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/747/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/747/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "R ESOLUTION \u2013 A Resolution of Eagle Mountain City, Utah, Approving a Property Tax Increase above the Certified Tax Rate for Fiscal Year 20226-2027",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 715,
@@ -526,7 +832,30 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2888,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2929,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/715/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/715/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "APPOINTMENTS",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Eagle Mountain Chapel and Recreation Building Development Agreement",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Rezoning Certain Lands Knows as Scenic Mountain",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Master Plan know as Transportation Master Plan (TMP) and Impact Fee Facilities Plan (IFFP)",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 755,
@@ -542,7 +871,9 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2879,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2928,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/755/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/755/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 689,
@@ -550,12 +881,71 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"10 recorded votes on agenda items (10 unanimous); details under Decisions.",
+"Recommended approval (Unanimous): Transportation Master Plan and Impact Fee Facilities Plan (IFFP)",
+"Approved (Unanimous): Angel\u2019s Landing Lot Split",
+"Recommended approval (Unanimous): EMMC 16.20.040 \u2013 Preliminary Plats",
+"Discussed: Rob\u2019s Trains; Temporary Use Standards"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2869,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2870,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2906,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/689/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/689/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Transportation Master Plan and Impact Fee Facilities Plan (IFFP)",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Angel\u2019s Landing Lot Split",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC 16.20.040 \u2013 Preliminary Plats",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC 16.25.040 \u2013 Final Plats",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Eagle Mountain Chapel and Recreation Building Development Agreement",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Eagle Mountain Chapel and Recreation Building \u2013 Site Plan",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC 17.60.12C. Barbed Wire Fencing",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC 17.24.040 \u2013 Residential Standards Table",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC \u2013 17.100.040 \u2013 Master Site Plans",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Pinnacles Rezone",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 727,
@@ -573,7 +963,40 @@ const meetings = [
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1867,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2897,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/727/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/727/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Approving the Off-Street Trails Master Plan",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "MOTION TO RECONSIDER \u2013 Resolution No. 60-2025 Approving the Disposal of 0.156 Acres of Designated \u201cSignificant Real Property\u201d (Utah County Parcel No. \u2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Section 16.20 Preliminary Plats",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code 8.15.070 Noise Levels",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "POSSIBLE ACTION \u2013 Approval of Second Amendment to the Triumph Master Development Agreement for the Triumph Subdivision",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "UPDATE \u2013 Legislative Priorities List",
+"outcome": "Approved",
+"vote": "4:1"
+}
+]
 },
 {
 "id": 676,
@@ -581,12 +1004,51 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"6 recorded votes on agenda items (6 unanimous); details under Decisions.",
+"Recommended approval (Unanimous): Scenic Mountain Rezone",
+"Tabled (Unanimous): Eagle Mountain Chapel and Recreation Building Site Plan",
+"Tabled (Unanimous): Eagle Mountain Chapel and Recreation Building Development Agreement",
+"Discussed: Architecture: The Value of Constructing Buildings to Last"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1861,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1862,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2882,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/676/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/676/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Scenic Mountain Rezone",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Eagle Mountain Chapel and Recreation Building Site Plan",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Eagle Mountain Chapel and Recreation Building Development Agreement",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Wright Retaining Wall Variance",
+"outcome": "Denied",
+"vote": "Unanimous"
+},
+{
+"item": "Brylee Townhomes Development Agreement First Amendment",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Stadion Development Agreement First Amendment Eagle Mountain Planning Commission Meeting \u2013 July 14, 2026 Page 4 of 5",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 714,
@@ -594,12 +1056,71 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"10 recorded votes on agenda items (8 unanimous); details under Decisions.",
+"Approved (4:1): Enacting Chapter 17.64 of the Eagle Mountain Municipal Code Establishing an Alternative Energy Overlay Zone",
+"Approved (4:1): And Possible Action: Citywide Speed Management Study at Key Locations",
+"Approved (Unanimous): Youth Council",
+"Discussed: Legislative Update \u2013 Lobbyist \u2013 David Stewart; Land Disposal Process Overview \u2013 City Attorney, Marcus; Procedural Options for Land Disposal Approved August 19,; Off - Street Trails Master Plan \u2013 Deputy City Manager, Steve; First Amendment to the Brylee Farms Phase B Development"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1854,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1856,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2868,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/714/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/714/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Youth Council",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Second Amendment to the Eagle Quest East Maste r Development Agreement",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Second Amendment to the Eagle Quest East Master Development Agreement",
+"outcome": "Denied",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Section 17.75.052 regarding Accessory Recreation Buildings",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Enacting Chapter 17.64 of the Eagle Mountain Municipal Code Establishing an Alternative Energy Overlay Zone",
+"outcome": "Approved",
+"vote": "4:1"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Section 17.10.030 Definitions",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Section 17.10.030 Definitions, Section 17.80.120 Political Signs, and Section 17.80.160 Temporary Signs",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain City Annexation Policy Plan",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Chapter 10.10 Parking, Regarding Vehicle Parking in Residential Zones",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "And Possible Action: Citywide Speed Management Study at Key Locations",
+"outcome": "Approved",
+"vote": "4:1"
+}
+]
 },
 {
 "id": 688,
@@ -607,12 +1128,41 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"4 recorded votes on agenda items (4 unanimous); details under Decisions.",
+"Recommended approval (Unanimous): Annexation Policy Plan",
+"Recommended approval (Unanimous): Triumph Master Development Agreement 2nd Amendment",
+"Recommended approval (Unanimous): EMMC 17.10.030, 17.80.120, and 17.160-Seasonal and Political Signs",
+"Discussed: Highest and Best Use Analysis"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1845,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1847,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2865,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/688/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/688/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Annexation Policy Plan",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Triumph Master Development Agreement 2nd Amendment",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC 17.10.030, 17.80.120, and 17.160-Seasonal and Political Signs",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC 16.20, 16.25, and 17.100 \u2013 Cost Estimate",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 750,
@@ -620,12 +1170,23 @@ const meetings = [
 "body": "Redevelopment Agency",
 "name": "Redevelopment Agency Board Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"1 recorded votes on agenda items (1 unanimous); details under Decisions.",
+"Approved (Unanimous): Adopting the RDA Budget for Fiscal Year 2026-2027"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1843,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1844,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2933,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/750/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/750/files",
+"textSource": "minutes (OCR)",
+"decisions": [
+{
+"item": "Adopting the RDA Budget for Fiscal Year 2026-2027",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 726,
@@ -633,12 +1194,36 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"3 recorded votes on agenda items (2 unanimous); details under Decisions.",
+"Approved (4:1): Adopting the Fiscal Year 2026-2027 Interim Budget and the Proposed Certified Tax Rate; and Discontinuing DebtBook Services",
+"Approved (Unanimous): ORDIN ANCE \u2013 An Ordinance of Eagle Mountain City, Utah, Amending Eagle Mountain Code 2.45 Youth Council",
+"Approved (Unanimous): Amending the Eagle Mountain Municipal Code 16.15 Concept Plans",
+"Discussed: Proposed Update to Annexation Policy Plan (addition of Area; Transmission Lines and the AG Zone \u2013 Community; Sage Valley Community Entrance S ign \u2013 Planner, St even; Fire Restriction Order; Fire Restrictions Order"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1831,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1838,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1860,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/726/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/726/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "ORDIN ANCE \u2013 An Ordinance of Eagle Mountain City, Utah, Amending Eagle Mountain Code 2.45 Youth Council",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Adopting the Fiscal Year 2026-2027 Interim Budget and the Proposed Certified Tax Rate; and Discontinuing DebtBook Services",
+"outcome": "Approved",
+"vote": "4:1"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code 16.15 Concept Plans",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 675,
@@ -646,12 +1231,36 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"3 recorded votes on agenda items (3 unanimous); details under Decisions.",
+"Recommended approval (Unanimous): EMMC 17.10.030, 17.25.030, and 17.55 Senior Housing Overlay Zone",
+"Recommended approval (Unanimous): Eagle Quest East Master Development Agreement Second Amendment Eagle Mountain Planning Commission Meeting \u2013 June 9, 2026 Page 3 of 5",
+"Recommended approval (Unanimous): Consolidated Fee Schedule Amendment",
+"Discussed: Architecture: The Value of Constructing Buildings to Last"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1820,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1821,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1849,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/675/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/675/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "EMMC 17.10.030, 17.25.030, and 17.55 Senior Housing Overlay Zone",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Eagle Quest East Master Development Agreement Second Amendment Eagle Mountain Planning Commission Meeting \u2013 June 9, 2026 Page 3 of 5",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Consolidated Fee Schedule Amendment",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 751,
@@ -659,12 +1268,23 @@ const meetings = [
 "body": "Redevelopment Agency",
 "name": "Redevelopment Agency Board Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"1 recorded votes on agenda items (1 unanimous); details under Decisions.",
+"Approved (Unanimous): Approving the Issuance of the Agency's Sales Tax and Tax Increment Revenue Bonds, Series 2026 (the \u201cBonds\") in Par Amount of Not to Exceed $10"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1808,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1811,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2932,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/751/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/751/files",
+"textSource": "minutes (OCR)",
+"decisions": [
+{
+"item": "Approving the Issuance of the Agency's Sales Tax and Tax Increment Revenue Bonds, Series 2026 (the \u201cBonds\") in Par Amount of Not to Exceed $10",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 713,
@@ -672,12 +1292,41 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"4 recorded votes on agenda items (3 unanimous); details under Decisions.",
+"Approved (3:1): Approving the Pledge of any portion of the City\u2019s Sales and Use Taxes to the Proposed Issuance of the Redevelopment Agency\u2019s Sales Tax and Tax Increme\u2026",
+"Approved (Unanimous): Approving a Franchise Agreement with Forged Fiber 37, LLC, a Subsidiary of AT&T",
+"Approved (Unanimous): Considering the Disposal of a Portion of Utah County Parcel #45:326:0109, Designating as \u201cSignificant Rea l Property\u201d Pursuant to Eagle Mountain Code",
+"Discussed: Employee Procedure Updates (City Issued Cell Phones) -; Employee Procedure Manual Updates (5.40 Credit Cards and; Scenic Mountain Area Rezoning of 223 Properties \u2013 Senior; Proposed Property Tax Impact Schedule"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1803,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1817,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1848,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/713/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/713/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Approving a Franchise Agreement with Forged Fiber 37, LLC, a Subsidiary of AT&T",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Considering the Disposal of a Portion of Utah County Parcel #45:326:0109, Designating as \u201cSignificant Rea l Property\u201d Pursuant to Eagle Mountain Code",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Pledge of any portion of the City\u2019s Sales and Use Taxes to the Proposed Issuance of the Redevelopment Agency\u2019s Sales Tax and Tax Increme\u2026",
+"outcome": "Approved",
+"vote": "3:1"
+},
+{
+"item": "UPDATE \u2013 Legislative Priorities List",
+"outcome": "Tabled",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 687,
@@ -685,12 +1334,24 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"1 recorded votes on agenda items (1 unanimous); details under Decisions.",
+"Recommended denial (Unanimous): VARIANCE-Pony Express Business Park",
+"Discussed: Impact Fees"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1780,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1781,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1823,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/687/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/687/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "VARIANCE-Pony Express Business Park",
+"outcome": "Recommended denial",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 748,
@@ -698,12 +1359,16 @@ const meetings = [
 "body": "City Council",
 "name": "Special Session - Budget Work Session",
 "upcoming": false,
-"summary": [],
+"summary": [
+"Discussed: Property Tax Impact Schedule"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1786,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1787,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1819,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/748/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/748/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 725,
@@ -711,12 +1376,46 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"5 recorded votes on agenda items (5 unanimous); details under Decisions.",
+"Approved (Unanimous): Initiating the City\u2019s Withdrawal from Unified Fire Service Area",
+"Approved (Unanimous): Approving a Memorandum of Agreement with Ivory Homes",
+"Denied (Unanimous): Amending Eagle Mountain Municipal Code Chapter 17.10.030 Definitions and",
+"Discussed: Become a Believer City Benjamin Lyne; Tax Increment Finance Bonding Option Discussion \u2013 Laura; Recreation & Events Sponsorship/Advertising \u2013 Deputy City; Corrigan Farms Rezone \u2013 Senior Planner, David Stroud; Deer Run Concept Plan"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1773,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1777,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1818,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/725/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/725/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Initiating the City\u2019s Withdrawal from Unified Fire Service Area",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving a Memorandum of Agreement with Ivory Homes",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending Eagle Mountain Municipal Code Chapter 17.10.030 Definitions and",
+"outcome": "Denied",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Flagship Homes Development Agreement",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "UPDATE \u2013 Legislative Priorities List",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 674,
@@ -724,12 +1423,29 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"2 recorded votes on agenda items (2 unanimous); details under Decisions.",
+"Recommended approval (Unanimous): EMMC17.64A/ternateEnergyOverlayZone",
+"Recommended approval (Unanimous): EMMC16.15ConceptPlans"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1768,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1769,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1791,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/674/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/674/files",
+"textSource": "minutes (OCR)",
+"decisions": [
+{
+"item": "EMMC17.64A/ternateEnergyOverlayZone",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC16.15ConceptPlans",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 745,
@@ -737,12 +1453,23 @@ const meetings = [
 "body": "Redevelopment Agency",
 "name": "Redevelopment Agency Board Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"1 recorded votes on agenda items (1 unanimous); details under Decisions.",
+"Approved (Unanimous): Accepting the RDA Tentative Budget for Fiscal Year 2026-2027 and Setting a Public Hearing and Final Budget Adoption on June 16, 2026"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1756,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1762,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1822,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/745/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/745/files",
+"textSource": "minutes (OCR)",
+"decisions": [
+{
+"item": "Accepting the RDA Tentative Budget for Fiscal Year 2026-2027 and Setting a Public Hearing and Final Budget Adoption on June 16, 2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 712,
@@ -750,12 +1477,71 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"10 recorded votes on agenda items (9 unanimous); details under Decisions.",
+"Approved (4:1): Approving the Spring Run Plaza Master Development Agreement",
+"Approved (Unanimous): Utah, Amending the Eagle Mountain Municipal Code 17.72.040 HVAC Screening for Multi-Family Buildings",
+"Approved (Unanimous): Accepting the Eagle Mountain City Tentative Budget for Fiscal Year 2026-2027 and Setting a Public Hearing for the Interim Budget on for June 16, 2026 \u2026",
+"Discussed: Eagle Mountain Standards of Cover - Unified Fire Authority; Senior Housing Overlay Zone - Long Range Planner, Elizabeth; Future Land Use Map \u2013 Planning Director Brandon Larsen; The Mayor intends to state that the tentative"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1759,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1761,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1779,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/712/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/712/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Utah, Amending the Eagle Mountain Municipal Code 17.72.040 HVAC Screening for Multi-Family Buildings",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Accepting the Eagle Mountain City Tentative Budget for Fiscal Year 2026-2027 and Setting a Public Hearing for the Interim Budget on for June 16, 2026 \u2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Acknowledging the Budget Officer\u2019s Statement of a Proposed Property Tax Increase and Property Tax Impact Schedule (Truth-in- Taxation Compliance)",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Declaring Intent to Increase Property Tax Revenue, Providing Notice, and Setting a Public Hearing Date in Accordance with Truth-in- Taxation Requireme\u2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Parks. Trails, and Open Space Master Plan and Impact Fee Facilities Plan (IFFP)",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Official Zoning Map and Future Land Use Map to Assign Current Zoning Designations to the Brandon Park Area",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Chapter 17.72 regarding Commercial and Multifamily Design Standards",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain City Code Chapter 17.55 Off-Street Parking and Chapter 17.60 Landscaping, Buffering, Fencing and Transitioning",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Spring Run Plaza Master Development Agreement",
+"outcome": "Approved",
+"vote": "4:1"
+},
+{
+"item": "PRELIMINARY PLAT \u2013 Spring Run Plaza",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 686,
@@ -763,12 +1549,45 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"5 recorded votes on agenda items (5 unanimous); details under Decisions.",
+"Approved (Unanimous): Eagle Mountain Planning Commission Meeting \u2013 April 28, 2026 Page 1 of 5",
+"Recommended approval (Unanimous): Wildlife Urban Interface Code Amendment",
+"Tabled (Unanimous): EMMC Chapter 16.15-Concept Plans Eagle Mountain Planning Commission Meeting \u2013 April 28, 2026 Page 2 of 5"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1748,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1749,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1778,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/686/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/686/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Eagle Mountain Planning Commission Meeting \u2013 April 28, 2026 Page 1 of 5",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Wildlife Urban Interface Code Amendment",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC Chapter 16.15-Concept Plans Eagle Mountain Planning Commission Meeting \u2013 April 28, 2026 Page 2 of 5",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "PRELIMINARY PLAT-Spring Run Plaza (Presented, discussed, and voted on after Item 7.D.)",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Spring Run Plaza Master Development Agreement (Presented, discussed, and voted on before Item 7.C.)",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 744,
@@ -776,12 +1595,16 @@ const meetings = [
 "body": "City Council",
 "name": "Special Session - Budget Work Session",
 "upcoming": false,
-"summary": [],
+"summary": [
+"No recorded votes found in the minutes (work/discussion session)."
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1750,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2935,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1766,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/744/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/744/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 746,
@@ -789,12 +1612,16 @@ const meetings = [
 "body": "City Council",
 "name": "Strategic and Budget Planning Retreat",
 "upcoming": false,
-"summary": [],
+"summary": [
+"No recorded votes found in the minutes (work/discussion session)."
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1744,plainText=false)",
 "packet": null,
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1765,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/746/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/746/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 724,
@@ -802,12 +1629,36 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"3 recorded votes on agenda items (2 unanimous); details under Decisions.",
+"Approved (4:1): Amending the Eagle Mountain Municipal Code 17.60 and 17.10 regarding Fencing",
+"Approved (Unanimous): Removed and tabled . Councilmember Wood seconded the motion",
+"Tabled (Unanimous): Amending the Eagle Mountain Municipal Code 17.72.040 HVAC Screening for Multi- Family Buildings",
+"Discussed: Quarterly Financial Report \u2013 Management Analyst Terrene Dela; Trails at Hidden Valley Subdivision Concept Plan (formerly; Brandon Park Rezone \u2013 Planner Steven Lehmitz; DAI Self - Storage & RV Parking - Joe Salisbury"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1742,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1740,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1764,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/724/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/724/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Removed and tabled . Councilmember Wood seconded the motion",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code 17.72.040 HVAC Screening for Multi- Family Buildings",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code 17.60 and 17.10 regarding Fencing",
+"outcome": "Approved",
+"vote": "4:1"
+}
+]
 },
 {
 "id": 673,
@@ -815,12 +1666,45 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"5 recorded votes on agenda items (4 unanimous); details under Decisions.",
+"Recommended approval (4:1): EMMC 17.72 Drive-through and structured parking text Code Amendment",
+"Tabled (Unanimous): PRELIMINARY PLAT-Spring Run Plaza",
+"Recommended approval (Unanimous): Brandon Park Rezone"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1729,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1724,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1753,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/673/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/673/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "PRELIMINARY PLAT-Spring Run Plaza",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Brandon Park Rezone",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC 17.72 Drive-through and structured parking text Code Amendment",
+"outcome": "Recommended approval",
+"vote": "4:1"
+},
+{
+"item": "EMMC 17.55 and 17.60Landscape and buffering text Code Amendment",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Flagship Master Development Agreement",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 743,
@@ -828,12 +1712,16 @@ const meetings = [
 "body": "City Council",
 "name": "Special Session - Budget Work Session",
 "upcoming": false,
-"summary": [],
+"summary": [
+"No recorded votes found in the minutes (work/discussion session)."
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1727,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2894,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1747,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/743/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/743/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 711,
@@ -841,12 +1729,56 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"7 recorded votes on agenda items (4 unanimous); details under Decisions.",
+"Tabled (4:1): Approving the Parks, Trails, and Open Space Master Plan",
+"Approved (4:1): Amending the Eagle Mountain Municipal Code Section 8.15 regarding Noise to Modify Maximum Decibel Levels During Hours of Restriction",
+"Approved (4:0): UPDATE \u2013 Legislative Priorities List",
+"Discussed: Strategic Plan Vision and Mission Updates \u2013; Alternative Energy Overlay Zone \u2013 Director of Legislative; FY 2026 - 2027 City Budget Update \u2013 Director of Administrati ve"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1714,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1722,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1746,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/711/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/711/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Approving a Land Exchange Agreement with SITLA for the Exchange of Properties in the Overland Area",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving a Memorandum of Agreement Concerning Overland",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving a Portion of Utah County Parcel #46:489:0159 of Designated \u201cSignificant Real Property\u201d Pursuant to EMMC 3.30.060 and 3.30.070, and",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Parks, Trails, and Open Space Master Plan",
+"outcome": "Tabled",
+"vote": "4:1"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Section 8.15 regarding Noise to Modify Maximum Decibel Levels During Hours of Restriction",
+"outcome": "Approved",
+"vote": "4:1"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code 2.35 (Public Library) and Eagle Mountain Municipal Code 17.15 (Roles and Duties) to modify the Timing of",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "UPDATE \u2013 Legislative Priorities List",
+"outcome": "Approved",
+"vote": "4:0"
+}
+]
 },
 {
 "id": 742,
@@ -854,12 +1786,36 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Special Session",
 "upcoming": false,
-"summary": [],
+"summary": [
+"3 recorded votes on agenda items (0 unanimous); details under Decisions.",
+"Approved (4:0): Approving a Development Agreement with Cadence Homes, LLC for an Amenity Exchange for Hidden Hollow",
+"Approved (4:0): Authorizing Extended Hours for Construction Operations for QTS \u2013 SLC1 as Allowed in Eagle Mountain Municipal Code Section 8.15.080(G)",
+"Approved (4:0): Approving the 5 Ame ndment to the Amended and Restated Overland Master Development Agreement",
+"Discussed: Gateway Park Land Use Plan - Scot Hazard; Soccer Recreation Program \u2013 Recreation Manager, Jason Hall; FY 2026 - 2027 City Budget Updates \u2013 Director of"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1699,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1703,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1725,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/742/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/742/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Approving a Development Agreement with Cadence Homes, LLC for an Amenity Exchange for Hidden Hollow",
+"outcome": "Approved",
+"vote": "4:0"
+},
+{
+"item": "Authorizing Extended Hours for Construction Operations for QTS \u2013 SLC1 as Allowed in Eagle Mountain Municipal Code Section 8.15.080(G)",
+"outcome": "Approved",
+"vote": "4:0"
+},
+{
+"item": "Approving the 5 Ame ndment to the Amended and Restated Overland Master Development Agreement",
+"outcome": "Approved",
+"vote": "4:0"
+}
+]
 },
 {
 "id": 685,
@@ -867,12 +1823,24 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"1 recorded votes on agenda items (1 unanimous); details under Decisions.",
+"Recommended approval (Unanimous): Amending EMMC 17.72.040. HVAC Screening Requirements",
+"Discussed: What every Planning Commissioner should know about health"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1705,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1697,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1733,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/685/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/685/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Amending EMMC 17.72.040. HVAC Screening Requirements",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 672,
@@ -880,12 +1848,46 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"5 recorded votes on agenda items (5 unanimous); details under Decisions.",
+"Approved (Unanimous): Election of Chair and Vice Chair CHAIR VOTE: Commissioner Free nominated Commissioner Hess for Planning Commission Chair",
+"Recommended approval (Unanimous): Review \u2014 Firefly NPA 8 Phase B Plat 4 Townhomes",
+"Approved (Unanimous): Overland Village 2 Phase B Preliminary Plat",
+"Discussed: Planning Commission General Powers and Duties"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1692,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1693,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1707,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/672/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/672/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Election of Chair and Vice Chair CHAIR VOTE: Commissioner Free nominated Commissioner Hess for Planning Commission Chair",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Review \u2014 Firefly NPA 8 Phase B Plat 4 Townhomes",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Overland Village 2 Phase B Preliminary Plat",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC Section 8.15 Noise Amendment",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "EMMC 17.15 (Roles and Duties)",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 741,
@@ -893,12 +1895,23 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Special Session",
 "upcoming": false,
-"summary": [],
+"summary": [
+"1 recorded votes on agenda items (0 unanimous); details under Decisions.",
+"Approved (4:0): Approving the Form of Preliminary Official Statement Relating to the Sale of the Bonds"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1688,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1691,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1709,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/741/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/741/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Approving the Form of Preliminary Official Statement Relating to the Sale of the Bonds",
+"outcome": "Approved",
+"vote": "4:0"
+}
+]
 },
 {
 "id": 710,
@@ -906,12 +1919,86 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"13 recorded votes on agenda items (12 unanimous); details under Decisions.",
+"Tabled (4:1): Amending the Eagle Mountain Municipal Code 17.60 and 17.10 regarding Fencing",
+"Approved (Unanimous): Community Services Board Appointments",
+"Approved (Unanimous): Senior Advisory Board",
+"Discussed: Mortgage Assistance Program Update - Affordable Housing; Setback Exception Request for OpenGov Application"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1680,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1686,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1708,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/710/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/710/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Community Services Board Appointments",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Senior Advisory Board",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Real Property Purchase and Sale Agreement with The Church of Jesus Christ of Latter-Day Saints for Well #9",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the 5th Amendment to the Amended and Restated Overland Master Development Agreement",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Approving a Professional Services Agreement with Economic & Planning Systems, Inc. for Consulting Related to Eagle's Landing",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code 17.60 and 17.10 regarding Fencing",
+"outcome": "Tabled",
+"vote": "4:1"
+},
+{
+"item": "Rezoning Certain Lands Known as QTS-SCL 2",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Sections 15.80, 17.10, 17.25",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain City Consolidated Fee Schedule regarding Site Plan Amendments",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Enacting Chapter",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Development Agreement with Williams",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Supporting America250 Utah and Recognizing and Approving the Eagle Mountain Utah250 Community Committee",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "UPDATE \u2013 Legislative Priorities List John Magness provided updates rega rding bills at the Hill",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 684,
@@ -919,12 +2006,16 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"Discussed: Setback Exception for OpenGov Application PLGA-266-8; Future Land Use Map"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1662,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1663,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1695,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/684/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/684/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 722,
@@ -932,12 +2023,46 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"5 recorded votes on agenda items (5 unanimous); details under Decisions.",
+"Approved (Unanimous): Authorizing Extended Hours for Construction Operations for the 4MG Scarlet Ridge Water Tank, as Allowed in Eagle Mountain Municipal Code Section 8.15.\u2026",
+"Approved (Unanimous): Approving the Second Amendment to the Fiscal Year 2025-2026 Annual Budget",
+"Approved (Unanimous): Authorizing the Issuance and Sale of Not More Than $220,000,000 Aggregate Principal Amount of Water and Sewer Revenue Bonds, Series 2026; Fixing the M\u2026",
+"Discussed: Drive Through Location and Aesthetic Requirements \u2013 Community; Community Development Block Grant (CDBG) \u2013 Affordable; Fifth Amendment to the"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1655,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1657,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1694,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/722/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/722/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Authorizing Extended Hours for Construction Operations for the 4MG Scarlet Ridge Water Tank, as Allowed in Eagle Mountain Municipal Code Section 8.15.\u2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Approving the Second Amendment to the Fiscal Year 2025-2026 Annual Budget",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Authorizing the Issuance and Sale of Not More Than $220,000,000 Aggregate Principal Amount of Water and Sewer Revenue Bonds, Series 2026; Fixing the M\u2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending Eagle Mountain Municipal Code Chapter 15.95 and Adopting the Eagle Mountain City Wildland Urban Interface Area Map",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Repealing Chapter",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 671,
@@ -945,12 +2070,45 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"5 recorded votes on agenda items (5 unanimous); details under Decisions.",
+"Recommended approval (Unanimous): One Call Auto Site Plan",
+"Recommended approval (Unanimous): Consolidated Fee Schedule for Site Plan Amendment",
+"Recommended approval (Unanimous): Overland Master Development Agreement"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1644,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1645,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1671,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/671/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/671/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "One Call Auto Site Plan",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Consolidated Fee Schedule for Site Plan Amendment",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Overland Master Development Agreement",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "QTS-SCL 2 Rezone",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "Code Amendment for the Wildland Urban Interface Area Map",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 735,
@@ -958,12 +2116,41 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"4 recorded votes on agenda items (3 unanimous); details under Decisions.",
+"Approved (4:1): MINOR SITE PLAN-Hidden Hollow Amenity Exchange (Minor) Site Plan Amendment",
+"Approved (Unanimous): Library Advisory Board",
+"Approved (Unanimous): Planning Commission",
+"Discussed: Quarterly Financial Report - Management Analyst Terrence; Future Land Use Map - Planning Director Brandon Larsen"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1639,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1643,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1658,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/735/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/735/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Library Advisory Board",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Planning Commission",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Section 2.45 regarding Youth Council",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "MINOR SITE PLAN-Hidden Hollow Amenity Exchange (Minor) Site Plan Amendment",
+"outcome": "Approved",
+"vote": "4:1"
+}
+]
 },
 {
 "id": 740,
@@ -971,12 +2158,16 @@ const meetings = [
 "body": "City Council",
 "name": "Annual Visioning Retreat",
 "upcoming": false,
-"summary": [],
+"summary": [
+"No recorded votes found in the minutes (work/discussion session)."
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1633,plainText=false)",
 "packet": null,
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1660,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/740/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/740/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 739,
@@ -984,12 +2175,16 @@ const meetings = [
 "body": "City Council",
 "name": "Annual Visioning Retreat",
 "upcoming": false,
-"summary": [],
+"summary": [
+"No recorded votes found in the minutes (work/discussion session)."
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1631,plainText=false)",
 "packet": null,
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1659,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/739/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/739/files",
+"textSource": "minutes",
+"decisions": []
 },
 {
 "id": 501,
@@ -997,12 +2192,46 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"5 recorded votes on agenda items (4 unanimous); details under Decisions.",
+"Tabled (5:1): Repealing and Replacing Eagle Mountain Municipal Code Section 2.10 regarding Power and Duties of Mayor",
+"Tabled (Unanimous): INTRODUCTION / RECOGNITION-Utah County Sheriff's Office",
+"Approved (Unanimous): Amending the Eagle Mountain Municipal Code Section 17.80.080 regarding directional signage related to data center/large-scale development",
+"Discussed: Justice Court - Jim Peters; Energy Project for Meta in Coordination with Williams -; Street Renaming and Addressing Code Amendment - Planner; Community Enhancement Board - Ben Reeves, City Manager"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1622,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1623,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1648,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/501/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/501/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "INTRODUCTION / RECOGNITION-Utah County Sheriff's Office",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Section 17.80.080 regarding directional signage related to data center/large-scale development",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Sections 15.80, 17.10",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Repealing and Replacing Eagle Mountain Municipal Code Section 2.10 regarding Power and Duties of Mayor",
+"outcome": "Tabled",
+"vote": "5:1"
+},
+{
+"item": "Repealing and Replacing Various Provisions of Title 2 of the Eagle Mountain Municipal Code Related to City Governance",
+"outcome": "Tabled",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 738,
@@ -1010,12 +2239,23 @@ const meetings = [
 "body": "City Council",
 "name": "Eagle Mountain City - City Council Interviews",
 "upcoming": false,
-"summary": [],
+"summary": [
+"1 recorded votes on agenda items (1 unanimous); details under Decisions.",
+"Approved (Unanimous): DECLARATION OF INDIVIDUAL \u2013 Declaration of individual to Fill City Council Vacancy Resulting from the Resignation of Councilmember Jared Gray for the \u2026"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1617,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1618,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1646,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/738/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/738/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "DECLARATION OF INDIVIDUAL \u2013 Declaration of individual to Fill City Council Vacancy Resulting from the Resignation of Councilmember Jared Gray for the \u2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 515,
@@ -1023,12 +2263,36 @@ const meetings = [
 "body": "Planning Commission",
 "name": "Planning Commission Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"3 recorded votes on agenda items (3 unanimous); details under Decisions.",
+"Tabled (Unanimous): Eagle Mountain Planning Commission Meeting \u2013 January 13, 2026 Page 1 of 4",
+"Recommended approval (Unanimous): Slope Development Code Amendment",
+"Recommended approval (Unanimous): City Parks, Trails and Open Space Master Plan ordinance",
+"Discussed: Parks, Trails and Open Space Master Plan and IFFP"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1612,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1613,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1651,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/515/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/515/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Eagle Mountain Planning Commission Meeting \u2013 January 13, 2026 Page 1 of 4",
+"outcome": "Tabled",
+"vote": "Unanimous"
+},
+{
+"item": "Slope Development Code Amendment",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+},
+{
+"item": "City Parks, Trails and Open Space Master Plan ordinance",
+"outcome": "Recommended approval",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 736,
@@ -1036,12 +2300,40 @@ const meetings = [
 "body": "Redevelopment Agency",
 "name": "Redevelopment Agency Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"4 recorded votes on agenda items (4 unanimous); details under Decisions.",
+"Approved (Unanimous): Appointing and Electing Officers to Serve in the Redevelopment Agency of Eagle Mountain City",
+"Approved (Unanimous): Appointing Abby Ivory as Executive Director of the Redevelopment Agency of Eagle Mountain City",
+"Approved (Unanimous): Amending the Official Project Area Plan for the Sweetwater #4 Community Reinvestment Area Project Area"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1604,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1606,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1767,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/736/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/736/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Appointing and Electing Officers to Serve in the Redevelopment Agency of Eagle Mountain City",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Appointing Abby Ivory as Executive Director of the Redevelopment Agency of Eagle Mountain City",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Official Project Area Plan for the Sweetwater #4 Community Reinvestment Area Project Area",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Official Project Area Budget for the Sweetwater #4 Community Reinvestment Area Project Area",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 },
 {
 "id": 488,
@@ -1049,11 +2341,50 @@ const meetings = [
 "body": "City Council",
 "name": "City Council Meeting",
 "upcoming": false,
-"summary": [],
+"summary": [
+"6 recorded votes on agenda items (5 unanimous); details under Decisions.",
+"Tabled (3:2): MINOR SITE PLAN-Hidden Hollow Amenity Exchange (Minor) Site Plan Amendment",
+"Approved (Unanimous): Planning Commission Appointments",
+"Approved (Unanimous): Senior Advisory Board",
+"Discussed: Transit Fresh Look - UTA; Eagle Mountain Recreation Programs - Jason Hall, Recreation Manager; Potential Replacement Options for the Eagle Mountain Blvd Monument -; Traffic Signal at Pony Express and Pole Canyon from QTS traffic \u2013"
+],
 "agenda": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1607,plainText=false)",
 "packet": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1611,plainText=false)",
 "minutes": "https://eaglemountainut.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1627,plainText=false)",
 "minutesStatus": "Approved",
-"portal": "https://eaglemountainut.portal.civicclerk.com/event/488/files"
+"portal": "https://eaglemountainut.portal.civicclerk.com/event/488/files",
+"textSource": "minutes",
+"decisions": [
+{
+"item": "Planning Commission Appointments",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Senior Advisory Board",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "From the agenda to be discussed at a later date, and to update the minutes from the December 16, 2025, City Council Meeting to reflect that the motion\u2026",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "Amending the Eagle Mountain Municipal Code Chapter 17.60.120 General Fencing/screening provisions",
+"outcome": "Approved",
+"vote": "Unanimous"
+},
+{
+"item": "MINOR SITE PLAN-Hidden Hollow Amenity Exchange (Minor) Site Plan Amendment",
+"outcome": "Tabled",
+"vote": "3:2"
+},
+{
+"item": "MOTION-Appointment of City Councilmember as Mayor Pro Tempore",
+"outcome": "Approved",
+"vote": "Unanimous"
+}
+]
 }
 ];

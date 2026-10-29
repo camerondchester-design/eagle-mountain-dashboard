@@ -23,3 +23,4 @@ table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;p
 .warnbox{border-left-color:#b45309}.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
 footer{border-top:1px solid var(--border);margin-top:40px;padding:16px;color:var(--muted);font-size:13px;text-align:center}
 @media (max-width:600px){.gname{width:130px}#map{height:320px}}
+details{margin:6px 0}summary{cursor:pointer;color:var(--accent);font-size:14px}

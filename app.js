@@ -78,7 +78,14 @@ function meetingsL(){
   $("mList").innerHTML=rows.length?rows.map(function(m){
     var d=new Date(m.date+"T12:00:00").toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric",year:"numeric"});
     return'<div class="card" style="margin-bottom:10px"><div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center"><strong>'+esc(d)+"</strong><span>"+esc(m.name)+"</span>"+pill(m.minutesStatus==="Upcoming"?"Upcoming":"Minutes: "+m.minutesStatus)+"</div>"+
-      (m.summary.length?"<ul>"+m.summary.map(function(b){return"<li>"+esc(b)+"</li>";}).join("")+"</ul>":(m.upcoming?"":'<p class="cap">Summary not compiled yet; see documents.</p>'))+
+      (function(){
+        if(m.upcoming)return"";
+        var recent=m.date>="2026-07-31";
+        var sum=m.summary.length?"<ul>"+m.summary.map(function(b){return"<li>"+esc(b)+"</li>";}).join("")+"</ul>":"";
+        var src='<p class="cap">From the '+esc(m.textSource||"documents")+'.</p>';
+        var dec=(m.decisions&&m.decisions.length)?'<details><summary>Decisions ('+m.decisions.length+')</summary><div class="tw"><table><thead><tr><th>Item</th><th>Outcome</th><th>Vote</th></tr></thead><tbody>'+m.decisions.map(function(d){return"<tr><td>"+esc(d.item)+"</td><td>"+pill(d.outcome)+"</td><td>"+esc(d.vote)+"</td></tr>";}).join("")+"</tbody></table></div></details>":"";
+        return recent?sum+src+dec:'<details><summary>Summary</summary>'+sum+src+'</details>'+dec;
+      })()+
       '<p style="margin:6px 0 0;font-size:14px">'+[lk(m.agenda,"Agenda"),lk(m.packet,"Packet"),lk(m.minutes,"Minutes"),'<a href="'+esc(m.portal)+'" target="_blank" rel="noopener">Portal page</a>'].join(" · ")+"</p></div>";
   }).join(""):"<p>No meetings match these filters.</p>";
 }
